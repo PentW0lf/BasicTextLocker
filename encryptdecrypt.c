@@ -30,10 +30,14 @@ void  decrypt(char *msg,int how)
 }
 int main()
 {
-    char a[] = "Ali Meri Jaan";
-    encrypt(a,500);
+    char a[100];
+    printf("Enter Your message : \n>> ");
+    scanf("%[^\n]s",a);
+    encrypt(a,251);
+    printf("\nAfter Encrypt Your Message...\n>> ");
     printf("%s\n",a);
-    decrypt(a,500);
+    printf("\nAfter Decrypt Your Message...\n>> ");
+    decrypt(a,251);
     printf("%s",a);
     return 0;
 }
